@@ -4,6 +4,7 @@ import Image from "next/image";
 import heroImage from "@/app/assets/photographer.jpg";
 import Services from "./home/services/page";
 import Portfolio from "./home/portfolio/page";
+import Travel from "./home/travel/page";
 
 export default function Home() {
   return (
@@ -40,6 +41,10 @@ export default function Home() {
       <section className="px-5">
 
        <Portfolio></Portfolio>
+      </section>
+      <section className="px-5">
+
+       <Travel></Travel>
       </section>
    </div>
   );

@@ -35,6 +35,10 @@ const DEFAULT_IMAGES = [
     src: "https://pbs.twimg.com/media/Gyla7NnXMAAXSo_?format=jpg&name=large",
     alt: "Social media image",
   },
+  {
+    src: "https://i.ibb.co.com/p60dJ3sP/Birthday-Photography.jpg",
+    alt: "Social media image",
+  },
 ];
 
 const DEFAULTS = {
