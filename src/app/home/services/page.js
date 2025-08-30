@@ -34,7 +34,7 @@ export default function Services() {
     },
     {
       title: "Travel Photography",
-      description: "Bring your adventures to life through photography.",
+      description: "Preserve every journey in stunning shots.",
       img: TravelPhotography,
     },
   ];

@@ -39,6 +39,10 @@ const DEFAULT_IMAGES = [
     src: "https://i.ibb.co.com/p60dJ3sP/Birthday-Photography.jpg",
     alt: "Social media image",
   },
+  {
+    src: "https://i.ibb.co.com/j9vn9Kmf/Whats-App-Image-2025-08-16-at-12-40-12-AM.jpg",
+    alt: "Utso Roy",
+  },
 ];
 
 const DEFAULTS = {
