@@ -35,7 +35,7 @@ const testimonialsData = [
 
 export default function Testimonials() {
   return (
-    <section className=" px-5">
+    <section className="py-5 px-5">
       <div className=" ">
         {/* Heading */}
         <div className="text-center mb-16">

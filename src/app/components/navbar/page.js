@@ -96,7 +96,7 @@ export default function Navbar() {
         </details>
       </li>
 
-      <Link href="/home/textmonials">
+      <Link href="/home/testimonials">
         <li>
           <a className={pathName === "/pages/textmonials" ? "underline font-bold" : ""}>
             Testmonials

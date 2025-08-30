@@ -6,6 +6,7 @@ import Services from "./home/services/page";
 import Portfolio from "./home/portfolio/page";
 import Travel from "./home/travel/page";
 import Testimonials from "./home/testimonials/page";
+import PackageSection from "./home/packagesSection/page";
 
 export default function Home() {
   return (
@@ -50,6 +51,10 @@ export default function Home() {
       <section className="px-5">
 
        <Testimonials></Testimonials>
+      </section>
+      <section className="px-5">
+
+       <PackageSection></PackageSection>
       </section>
    </div>
   );
