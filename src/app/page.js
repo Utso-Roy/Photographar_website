@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import heroImage from "@/app/assets/photographer.jpg";
+import Services from "./home/services/page";
+import Portfolio from "./home/portfolio/page";
 
 export default function Home() {
   return (
@@ -31,9 +33,13 @@ export default function Home() {
       </div>
       </section>
       
-      <section>
+      <section className="px-5">
 
-        texfjklsjfklsfklsdjfklsfk afjklsdjfsjf afadkljflksjfklasjfklasfls
+       <Services></Services>
+      </section>
+      <section className="px-5">
+
+       <Portfolio></Portfolio>
       </section>
    </div>
   );
