@@ -5,6 +5,8 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import { Montserrat } from "next/font/google";
+import Navbar from "./components/navbar/page";
+import Footer from "./components/footer/page";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -19,7 +21,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <div>
+          <Navbar></Navbar>
+          <main>{children}</main>
+          <Footer></Footer>
+        </div>
+      </body>
     </html>
   );
 }
