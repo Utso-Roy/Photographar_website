@@ -1,6 +1,3 @@
-/*
-	Installed from https://reactbits.dev/default/
-*/
 
 import {
   Camera,

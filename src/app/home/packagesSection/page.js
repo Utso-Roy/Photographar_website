@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import weddingImg from "@/app/assets/wedding.jpg";
-import birthdayImg from "@/app/assets/BirthdayPhotography.jpg";
-import travelImg from "@/app/assets/TravelPhotography.jpg";
+import weddingImg from "../../assets/wedding.jpg";
+import birthdayImg from "../../assets/BirthdayPhotography.jpg";
+import travelImg from "../../assets/TravelPhotography.jpg";
 
 const packages = [
   {

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import camera from '@/app/assets/camera.json'
+import camera from '../../assets/camera.json'
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
 export default function Navbar() {
@@ -98,8 +98,8 @@ export default function Navbar() {
 
       <Link href="/home/testimonials">
         <li>
-          <a className={pathName === "/pages/textmonials" ? "underline font-bold" : ""}>
-            Testmonials
+          <a className={pathName === "/home/testimonials" ? "underline font-bold" : ""}>
+            Testimonials
           </a>
         </li>
       </Link>

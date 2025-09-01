@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import DomeGallery from "@/DomeGallery/DomeGallery";
+import DomeGallery from "../../../DomeGallery/DomeGallery.jsx";
 
 export default function Portfolio() {
   return (

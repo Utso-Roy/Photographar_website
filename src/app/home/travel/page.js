@@ -1,5 +1,5 @@
 "use client";
-import CircularGallery from "@/CircularGallery/CircularGallery";
+import CircularGallery from "../../../CircularGallery/CircularGallery.jsx";
 import React from "react";
 
 export default function Travel() {
