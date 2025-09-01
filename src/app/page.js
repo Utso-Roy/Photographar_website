@@ -9,6 +9,7 @@ import Testimonials from "./home/testimonials/page";
 import PackageSection from "./home/packagesSection/page";
 import SocialIconGrid from "./pages/contact/page";
 import Faq from "./home/feq/page";
+import WhyChoseMySection from "./home/whyChooseMySection/page";
 
 export default function Home() {
   return (
@@ -52,11 +53,13 @@ export default function Home() {
       <section className="px-5">
         <PackageSection></PackageSection>
       </section>
-      <section className="px-5">
-        <SocialIconGrid></SocialIconGrid>
-      </section>
+      
       <section className="px-5">
         <Faq></Faq>
+      </section>
+      
+      <section className="px-5">
+        <WhyChoseMySection></WhyChoseMySection>
       </section>
     </div>
   );
