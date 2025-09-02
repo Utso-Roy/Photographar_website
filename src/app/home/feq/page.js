@@ -33,16 +33,16 @@ export default function Faq() {
   };
 
   return (
-    <section className="bg-black text-white py-16 ">
+    <section className="bg-black text-white py-12 ">
       <div >
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <h2 className="text-3xl font-bold text-center mb-12">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-[#7e5e12] rounded-xl p-4 transition-all duration-300 cursor-pointer"
+              className="border-2 border-[#7e5e12] rounded-xl p-4 transition-all duration-300 cursor-pointer"
               onClick={() => toggleFaq(index)}
             >
               <div className="flex justify-between items-center">

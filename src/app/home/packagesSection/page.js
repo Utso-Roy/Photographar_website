@@ -28,7 +28,7 @@ const packages = [
 
 export default function PackageSection() {
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-12 bg-gray-900">
       <div>
         {/* Heading */}
         <div className="text-center mb-16">

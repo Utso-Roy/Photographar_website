@@ -10,6 +10,7 @@ import PackageSection from "./home/packagesSection/page";
 import SocialIconGrid from "./pages/contact/page";
 import Faq from "./home/feq/page";
 import WhyChoseMySection from "./home/whyChooseMySection/page";
+import CallToActionSection from "./home/callToActionSection/page";
 
 export default function Home() {
   return (
@@ -60,6 +61,10 @@ export default function Home() {
       
       <section className="px-5">
         <WhyChoseMySection></WhyChoseMySection>
+      </section>
+      
+      <section className="px-5">
+        <CallToActionSection></CallToActionSection>
       </section>
     </div>
   );

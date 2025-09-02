@@ -35,7 +35,7 @@ const testimonialsData = [
 
 export default function Testimonials() {
   return (
-    <section className="py-5 px-5">
+    <section className="py-12 ">
       <div className=" ">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -75,14 +75,14 @@ export default function Testimonials() {
                     <h4 className="text-white font-semibold text-lg">
                       {testimonial.name}
                     </h4>
-                    <p className="text-yellow-400 text-sm">
+                    <p className=" text-sm">
                       {testimonial.designation}
                     </p>
                   </div>
                 </div>
 
                 <p className="text-gray-300 italic mb-4">{testimonial.feedback}</p>
-                <FaQuoteRight className="text-yellow-400 text-2xl float-right" />
+                <FaQuoteRight className=" text-2xl float-right" />
               </div>
             </SwiperSlide>
           ))}
