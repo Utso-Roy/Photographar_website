@@ -62,12 +62,14 @@ export default function Services() {
                 data-aos-delay={index * 100}
               >
                 <div className="relative w-full h-64">
-                  {/* fill এর পরিবর্তে width এবং height use করা safer */}
+                  
                   <Image
                     src={service.img}
                     alt={service.title}
                     width={500}
                     height={400}
+                    priority={false}
+                   
                     className="object-cover w-full h-full"
                   />
                 </div>

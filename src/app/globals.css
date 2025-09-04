@@ -1,4 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* global.css */
+.my-btn {
+  background: #ff6600 !important;
+  border: none !important;
+  color: white !important;
+}
 
+.my-btn:hover {
+  background: #cc5200 !important;
+}
+
+/* global.css */
+.p-inputColor {
+    color: #cc5200;
+}
+
+
+.p-inputtext {
+    
+  border: none !important;
+  box-shadow: none !important;
+}
