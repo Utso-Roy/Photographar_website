@@ -12,11 +12,11 @@ export default function Contact() {
   const [message, setMessage] = useState('');
 
   return (
-    <section className='px-6  py-20 '>
-      <div className='flex justify-center items-center gap-12'>
+    <section className='px-6  py-18 '>
+      <div  className='flex justify-center items-center gap-12'>
         
         {/* Left Side - Info */}
-        <div className="space-y-6">
+        <div data-aos="fade-right" className="space-y-6">
           <h2 className="text-3xl font-bold text-center">Get in Touch</h2>
          
 
@@ -37,7 +37,7 @@ export default function Contact() {
         </div>
 
         {/* Right Side - Contact Form */}
-        <div className=" shadow-lg rounded-2xl p-8 space-y-8 ">
+        <div data-aos="fade-left" className=" shadow-lg rounded-2xl p-8 space-y-8 ">
           <form className="space-y-8  md:w-80">
             <div>
               <FloatLabel>

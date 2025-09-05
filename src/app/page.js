@@ -7,10 +7,10 @@ import Portfolio from "./home/portfolio/page";
 import Travel from "./home/travel/page";
 import Testimonials from "./home/testimonials/page";
 import PackageSection from "./home/packagesSection/page";
-import SocialIconGrid from "./pages/contact/page";
 import Faq from "./home/feq/page";
 import WhyChoseMySection from "./home/whyChooseMySection/page";
 import CallToActionSection from "./home/callToActionSection/page";
+import Contact from "./pages/contact/page";
 
 export default function Home() {
   return (
@@ -66,6 +66,7 @@ export default function Home() {
       <section className="px-5">
         <CallToActionSection></CallToActionSection>
       </section>
+    
     </div>
   );
 }
