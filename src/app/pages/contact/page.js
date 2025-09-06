@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <section className='px-6  py-18 '>
-      <div  className='flex justify-center items-center gap-12'>
+      <div  className='flex background rounded-2xl justify-center items-center gap-12'>
         
         {/* Left Side - Info */}
         <div data-aos="fade-right" className="space-y-6">
@@ -22,15 +22,15 @@ export default function Contact() {
 
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-gray-700">
-              <MdLocationOn size={22} className="text-blue-500" />
+              <MdLocationOn size={22}  />
               <span>Dhaka, Bangladesh</span>
             </div>
             <div className="flex items-center gap-2 text-gray-700">
-              <MdEmail size={22} className="text-blue-500" />
+              <MdEmail size={22}  />
               <span>yourmail@example.com</span>
             </div>
             <div className="flex items-center gap-2 text-gray-700">
-              <MdPhone size={22} className="text-blue-500" />
+              <MdPhone size={22}  />
               <span>+880 1234-567890</span>
             </div>
           </div>

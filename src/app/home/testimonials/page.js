@@ -21,7 +21,7 @@ const testimonialsData = [
     name: "Michael Lee",
     designation: "Corporate Client",
     feedback:
-      "Professional, punctual, and creative. The photos from our corporate event were amazing!",
+      "Timely, professional, and beautifully captured!",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
@@ -35,7 +35,7 @@ const testimonialsData = [
 
 export default function Testimonials() {
   return (
-    <section className="py-18 px-5 ">
+    <section className="py-18  px-5 ">
       <div className=" ">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -60,7 +60,7 @@ export default function Testimonials() {
         >
           {testimonialsData.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform transition duration-500 relative m-3">
+              <div className="background rounded-2xl p-8 shadow-xl hover:shadow-2xl transform transition duration-500 relative m-3">
                 <FaQuoteLeft className="text-yellow-400 text-3xl absolute -top-5 -left-5" />
 
                 <div className="flex items-center mb-4">

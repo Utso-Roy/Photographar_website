@@ -22,7 +22,7 @@ export default function WhyChoseMySection() {
   ];
 
   return (
-    <section className="bg-black text-white py-12 overflow-hidden">
+    <section className=" text-white py-12 overflow-hidden">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Me</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export default function WhyChoseMySection() {
           {reasons.concat(reasons).map((item, i) => (
             <div
               key={i}
-              className="border-2 border-[#7e5318] cursor-pointer  rounded-2xl p-6 shadow-md min-w-[250px] flex-shrink-0 text-center"
+              className="border-2 border-[#7e5318] background cursor-pointer  rounded-2xl p-6 shadow-md min-w-[250px] flex-shrink-0 text-center"
             >
               <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

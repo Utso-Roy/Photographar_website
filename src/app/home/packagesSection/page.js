@@ -43,7 +43,7 @@ export default function PackageSection() {
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-2xl border-2 border-[#7e5e12]  overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-500"
+              className="background rounded-2xl  overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-500"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -55,7 +55,7 @@ export default function PackageSection() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{pkg.title}</h3>
-                <p className="text-yellow-400 text-lg font-bold mb-4">{pkg.price}</p>
+                <p className=" text-lg font-bold mb-4">{pkg.price}</p>
                 <ul className="text-gray-300 mb-6">
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="mb-1 before:content-['✔'] before:text-yellow-500 before:mr-2">
@@ -63,7 +63,7 @@ export default function PackageSection() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-yellow-500 text-black font-semibold py-2 px-6 rounded-full hover:bg-yellow-400 transition">
+                <button className="bg-yellow-500 text-base-100 btn font-semibold py-2 px-6 rounded-full ">
                   Book Now
                 </button>
               </div>
