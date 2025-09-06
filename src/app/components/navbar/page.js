@@ -21,16 +21,22 @@ export default function Navbar() {
         <details>
           <summary>Services</summary>
           <ul className="p-2 text-black">
+           <Link href="/services/wedding">
+           
+           
             <li>
               <a className={pathName === "/services/wedding" ? "underline  font-bold" : ""}>
                 Wedding
               </a>
             </li>
-            <li>
+            </Link>
+            <Link href="/services/birthday">
+             <li>
               <a className={pathName === "/services/birthday" ? "underline font-bold" : ""}>
                 Birthday
               </a>
             </li>
+            </Link>
             <li>
               <a className={pathName === "/services/corporate" ? "underline font-bold" : ""}>
                 Corporate

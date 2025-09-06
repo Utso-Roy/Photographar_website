@@ -51,7 +51,7 @@ export default function ProductPhotography() {
       id: 7,
       title: "Coffee Mug",
       description: "Lifestyle product shots with props and soft lighting.",
-      image: "http://images.unsplash.com/photo-1499961524705-bfd103e65a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1499961524705-bfd103e65a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 8,
