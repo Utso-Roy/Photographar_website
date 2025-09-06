@@ -37,11 +37,14 @@ export default function Navbar() {
               </a>
             </li>
             </Link>
-            <li>
+            <Link href="/services/corporate">
+            
+             <li>
               <a className={pathName === "/services/corporate" ? "underline font-bold" : ""}>
                 Corporate
               </a>
             </li>
+            </Link>
           </ul>
         </details>
       </li>
