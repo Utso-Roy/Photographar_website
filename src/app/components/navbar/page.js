@@ -44,16 +44,15 @@ export default function Navbar() {
         <details>
           <summary>Portfolio</summary>
           <ul className="p-2 text-black">
-            <li>
-              <a className={pathName === "/portfolio/wedding" ? "underline font-bold" : ""}>
-                Wedding
-              </a>
-            </li>
-            <li>
+            
+            <Link href="/portfolio/events">
+            
+              <li>
               <a className={pathName === "/portfolio/events" ? "underline font-bold" : ""}>
                 Events
               </a>
             </li>
+            </Link>
             <li>
               <a className={pathName === "/portfolio/travel" ? "underline font-bold" : ""}>
                 Travel

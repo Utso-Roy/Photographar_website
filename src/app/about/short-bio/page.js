@@ -12,7 +12,7 @@ export default function Bio() {
           <Image
             src={profile}
             alt="Profile"
-            className="w-48 h-48 rounded-full border-4 border-amber-400 object-cover shadow-xl"
+            className="w-48 h-48 rounded-full border-3 border-amber-400 object-cover shadow-xl"
           />
         </div>
 
