@@ -53,16 +53,21 @@ export default function Navbar() {
               </a>
             </li>
             </Link>
-            <li>
+            <Link href="/portfolio/travel">
+            
+              <li>
               <a className={pathName === "/portfolio/travel" ? "underline font-bold" : ""}>
                 Travel
               </a>
             </li>
+            </Link>
+            <Link href="/portfolio/product-photography">
             <li>
               <a className={pathName === "/portfolio/product-photography" ? "underline font-bold" : ""}>
                 Product Photography
               </a>
             </li>
+            </Link>
           </ul>
         </details>
       </li>
