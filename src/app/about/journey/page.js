@@ -13,6 +13,7 @@ import {
   FiHeart,
   FiCheck,
 } from "react-icons/fi";
+import CountUp from "react-countup";
 
 export default function Journey() {
   const stats = [
@@ -40,53 +41,52 @@ export default function Journey() {
       icon: <FiAward className="text-xl" />,
       hint: "Recognitions",
     },
-    ];
-    
-    const Values = [
-            {
-              icon: <FiHeart className="text-2xl" />,
-              title: "Human First",
-              desc: "Real moments, honest emotions, respectful storytelling.",
-            },
-            {
-              icon: <FiCamera className="text-2xl" />,
-              title: "Craft & Clarity",
-              desc: "Clean frames, purposeful light, timeless edits.",
-            },
-            {
-              icon: <FiMapPin className="text-2xl" />,
-              title: "On Time, On Point",
-              desc: "Punctual shoots, clear communication, reliable delivery.",
-            },
-          ]
+  ];
+
+  const Values = [
+    {
+      icon: <FiHeart className="text-2xl" />,
+      title: "Human First",
+      desc: "Real moments, honest emotions, respectful storytelling.",
+    },
+    {
+      icon: <FiCamera className="text-2xl" />,
+      title: "Craft & Clarity",
+      desc: "Clean frames, purposeful light, timeless edits.",
+    },
+    {
+      icon: <FiMapPin className="text-2xl" />,
+      title: "On Time, On Point",
+      desc: "Punctual shoots, clear communication, reliable delivery.",
+    },
+  ];
 
   const timeline = [
-  {
-    year: "2019",
-    title: "First Camera & First Gig",
-    desc: "Started capturing moments with passion.",
-    icon: <FiCamera />,
-  },
-  {
-    year: "2021",
-    title: "From Hobbyist to Professional",
-    desc: "Delivered quality corporate and lifestyle.",
-    icon: <FiCheck />,
-  },
-  {
-    year: "2023",
-    title: "Scaling Up the Studio",
-    desc: "Built a team and streamlined workflow.",
-    icon: <FiUsers />,
-  },
-  {
-    year: "2025",
-    title: "Creative Direction & Brand Work",
-    desc: "Leading full creative projects for brands.",
-    icon: <FiAward />,
-  },
-];
-
+    {
+      year: "2019",
+      title: "First Camera & First Gig",
+      desc: "Started capturing moments with passion.",
+      icon: <FiCamera />,
+    },
+    {
+      year: "2021",
+      title: "From Hobbyist to Professional",
+      desc: "Delivered quality corporate and lifestyle.",
+      icon: <FiCheck />,
+    },
+    {
+      year: "2023",
+      title: "Scaling Up the Studio",
+      desc: "Built a team and streamlined workflow.",
+      icon: <FiUsers />,
+    },
+    {
+      year: "2025",
+      title: "Creative Direction & Brand Work",
+      desc: "Leading full creative projects for brands.",
+      icon: <FiAward />,
+    },
+  ];
 
   return (
     <section className="px-5 py-18 min-h-screen  text-neutral-100">
@@ -120,12 +120,11 @@ export default function Journey() {
                   {s.icon}
                   <span className="text-sm">{s.label}</span>
                 </div>
-                <Tag
-                  value={s.hint}
-                  className=" text-neutral-300 "
-                />
+                <Tag severity="secondary" value={s.hint} rounded></Tag>
               </div>
-              <div className="mt-4 text-3xl font-bold">{s.value}</div>
+              <div className="mt-4 text-3xl font-bold">
+                <CountUp end={parseInt(s.value)} duration={2} separator="," />
+              </div>{" "}
             </div>
           ))}
         </div>
@@ -153,13 +152,14 @@ export default function Journey() {
           </div>
 
           {/* Side Card */}
-          <aside className="rounded-2xl  p-6">
+          <aside className="rounded-2xl background  p-6">
             <div className="flex items-center gap-3">
               <Avatar
-                label="UR"
+                image="https://randomuser.me/api/portraits/men/32.jpg"
                 shape="circle"
-                className="bg-neutral-800 text-neutral-200"
+                className="bg-neutral-800"
               />
+
               <div>
                 <p className="text-sm text-neutral-400">Lead Photographer</p>
                 <p className="font-semibold">Utso Chandro Roy</p>
@@ -187,15 +187,12 @@ export default function Journey() {
           </aside>
         </div>
 
-              {/* Values */}
-              
+        {/* Values */}
+
         <Divider />
         <div className="grid md:grid-cols-2 my-4  gap-4">
           {Values.map((v, i) => (
-            <div
-              key={i}
-              className="rounded-xl background  p-6 "
-            >
+            <div key={i} className="rounded-xl background  p-6 ">
               <div className="flex items-center gap-2 text-neutral-300">
                 {v.icon}
                 <h3 className="font-semibold text-lg">{v.title}</h3>
