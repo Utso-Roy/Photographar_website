@@ -10,7 +10,6 @@ import PackageSection from "./home/packagesSection/page";
 import Faq from "./home/feq/page";
 import WhyChoseMySection from "./home/whyChooseMySection/page";
 import CallToActionSection from "./home/callToActionSection/page";
-import Contact from "./pages/contact/page";
 
 export default function Home() {
   return (

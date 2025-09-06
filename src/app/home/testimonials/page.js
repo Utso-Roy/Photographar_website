@@ -21,7 +21,7 @@ const testimonialsData = [
     name: "Michael Lee",
     designation: "Corporate Client",
     feedback:
-      "Timely, professional, and beautifully captured!",
+      "Beautifully captured with true professionalism and perfect timing!",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {

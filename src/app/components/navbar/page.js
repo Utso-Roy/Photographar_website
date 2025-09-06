@@ -72,26 +72,38 @@ export default function Navbar() {
         <details>
           <summary>About Me</summary>
           <ul className="p-2 text-black">
+            <Link href="/about/short-bio">
+            
             <li>
               <a className={pathName === "/about/short-bio" ? "underline font-bold" : ""}>
                 Short Bio
               </a>
             </li>
-            <li>
+            </Link>
+            <Link href="/about/experience">
+            
+              <li>
               <a className={pathName === "/about/experience" ? "underline font-bold" : ""}>
                 Experience
               </a>
             </li>
+            </Link>
+            <Link href='/about/achievement'>
             <li>
               <a className={pathName === "/about/achievement" ? "underline font-bold" : ""}>
                 Achievement
               </a>
             </li>
+            </Link>
+            <Link href="/about/journey">
+            
             <li>
               <a className={pathName === "/about/journey" ? "underline font-bold" : ""}>
-                Photographer Journey
+              Journey
               </a>
             </li>
+            </Link>
+              
           </ul>
         </details>
       </li>
