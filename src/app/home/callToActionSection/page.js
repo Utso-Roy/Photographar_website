@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "primereact/button"; 
+import Link from "next/link";
 
 
 export default function CallToActionSection() {
@@ -36,16 +37,21 @@ export default function CallToActionSection() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
+          <Link href="/pages/booking">
+          
           <Button 
             label="Book a Session" 
-            className="p-button-rounded p-button-outlined p-button-warning font-semibold px-6 py-3" 
+            className="p-button-rounded  my-btn font-semibold px-6 py-3" 
             icon="pi pi-calendar"
           />
-          <Button 
+          </Link>
+          <Link href='/portfolio/events'>
+           <Button 
             label="View Portfolio" 
-            className="p-button-rounded p-button-outlined p-button-warning font-semibold px-6 py-3" 
+            className="p-button-rounded  my-btn font-semibold px-6 py-3" 
             icon="pi pi-images"
           />
+          </Link>
         </motion.div>
       </div>
     </section>

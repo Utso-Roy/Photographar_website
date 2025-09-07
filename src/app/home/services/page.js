@@ -30,7 +30,7 @@ export default function Services() {
   ];
 
   return (
-    <section className=" py-10 bg-black">
+    <section className=" py-10">
       <div className="w-full ">
         {/* Heading */}
         <div className="text-center mb-12" data-aos="fade-down">
@@ -57,7 +57,7 @@ export default function Services() {
           {services.map((service, index) => (
             <SwiperSlide key={index}>
               <div
-                className="bg-gray-900 rounded-lg border-2 border-[#7e5e12] shadow-lg overflow-hidden hover:shadow-2xl transition"
+                className="background rounded-lg  shadow-lg overflow-hidden hover:shadow-2xl transition"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >

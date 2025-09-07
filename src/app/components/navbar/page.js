@@ -1,19 +1,18 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import camera from '../../assets/camera.json'
+import camera from "../../assets/camera.json";
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
+import { Button } from "primereact/button";
 export default function Navbar() {
- const pathName = usePathname();
+  const pathName = usePathname();
 
   const links = (
     <>
       <Link href="/">
         <li>
-          <a className={pathName === "/" ? " underline font-bold" : ""}>
-            Home
-          </a>
+          <a className={pathName === "/" ? " underline font-bold" : ""}>Home</a>
         </li>
       </Link>
 
@@ -21,29 +20,44 @@ export default function Navbar() {
         <details>
           <summary>Services</summary>
           <ul className="p-2 text-black">
-           <Link href="/services/wedding">
-           
-           
-            <li>
-              <a className={pathName === "/services/wedding" ? "underline  font-bold" : ""}>
-                Wedding
-              </a>
-            </li>
+            <Link href="/services/wedding">
+              <li>
+                <a
+                  className={
+                    pathName === "/services/wedding"
+                      ? "underline  font-bold"
+                      : ""
+                  }
+                >
+                  Wedding
+                </a>
+              </li>
             </Link>
             <Link href="/services/birthday">
-             <li>
-              <a className={pathName === "/services/birthday" ? "underline font-bold" : ""}>
-                Birthday
-              </a>
-            </li>
+              <li>
+                <a
+                  className={
+                    pathName === "/services/birthday"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Birthday
+                </a>
+              </li>
             </Link>
             <Link href="/services/corporate">
-            
-             <li>
-              <a className={pathName === "/services/corporate" ? "underline font-bold" : ""}>
-                Corporate
-              </a>
-            </li>
+              <li>
+                <a
+                  className={
+                    pathName === "/services/corporate"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Corporate
+                </a>
+              </li>
             </Link>
           </ul>
         </details>
@@ -53,29 +67,44 @@ export default function Navbar() {
         <details>
           <summary>Portfolio</summary>
           <ul className="p-2 text-black">
-            
             <Link href="/portfolio/events">
-            
               <li>
-              <a className={pathName === "/portfolio/events" ? "underline font-bold" : ""}>
-                Events
-              </a>
-            </li>
+                <a
+                  className={
+                    pathName === "/portfolio/events"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Events
+                </a>
+              </li>
             </Link>
             <Link href="/portfolio/travel">
-            
               <li>
-              <a className={pathName === "/portfolio/travel" ? "underline font-bold" : ""}>
-                Travel
-              </a>
-            </li>
+                <a
+                  className={
+                    pathName === "/portfolio/travel"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Travel
+                </a>
+              </li>
             </Link>
             <Link href="/portfolio/product-photography">
-            <li>
-              <a className={pathName === "/portfolio/product-photography" ? "underline font-bold" : ""}>
-                Product Photography
-              </a>
-            </li>
+              <li>
+                <a
+                  className={
+                    pathName === "/portfolio/product-photography"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Product Photography
+                </a>
+              </li>
             </Link>
           </ul>
         </details>
@@ -86,44 +115,64 @@ export default function Navbar() {
           <summary>About Me</summary>
           <ul className="p-2 text-black">
             <Link href="/about/short-bio">
-            
-            <li>
-              <a className={pathName === "/about/short-bio" ? "underline font-bold" : ""}>
-                Short Bio
-              </a>
-            </li>
+              <li>
+                <a
+                  className={
+                    pathName === "/about/short-bio" ? "underline font-bold" : ""
+                  }
+                >
+                  Short Bio
+                </a>
+              </li>
             </Link>
             <Link href="/about/experience">
-            
               <li>
-              <a className={pathName === "/about/experience" ? "underline font-bold" : ""}>
-                Experience
-              </a>
-            </li>
+                <a
+                  className={
+                    pathName === "/about/experience"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Experience
+                </a>
+              </li>
             </Link>
-            <Link href='/about/achievement'>
-            <li>
-              <a className={pathName === "/about/achievement" ? "underline font-bold" : ""}>
-                Achievement
-              </a>
-            </li>
+            <Link href="/about/achievement">
+              <li>
+                <a
+                  className={
+                    pathName === "/about/achievement"
+                      ? "underline font-bold"
+                      : ""
+                  }
+                >
+                  Achievement
+                </a>
+              </li>
             </Link>
             <Link href="/about/journey">
-            
-            <li>
-              <a className={pathName === "/about/journey" ? "underline font-bold" : ""}>
-              Journey
-              </a>
-            </li>
+              <li>
+                <a
+                  className={
+                    pathName === "/about/journey" ? "underline font-bold" : ""
+                  }
+                >
+                  Journey
+                </a>
+              </li>
             </Link>
-              
           </ul>
         </details>
       </li>
 
       <Link href="/home/testimonials">
         <li>
-          <a className={pathName === "/home/testimonials" ? "underline font-bold" : ""}>
+          <a
+            className={
+              pathName === "/home/testimonials" ? "underline font-bold" : ""
+            }
+          >
             Testimonials
           </a>
         </li>
@@ -131,7 +180,9 @@ export default function Navbar() {
 
       <Link href="/pages/blog">
         <li>
-          <a className={pathName === "/pages/blog" ? "underline font-bold" : ""}>
+          <a
+            className={pathName === "/pages/blog" ? "underline font-bold" : ""}
+          >
             Blog
           </a>
         </li>
@@ -139,7 +190,11 @@ export default function Navbar() {
 
       <Link href="/pages/booking">
         <li>
-          <a className={pathName === "/pages/booking" ? "underline font-bold" : ""}>
+          <a
+            className={
+              pathName === "/pages/booking" ? "underline font-bold" : ""
+            }
+          >
             Booking
           </a>
         </li>
@@ -147,7 +202,11 @@ export default function Navbar() {
 
       <Link href="/pages/contact">
         <li>
-          <a className={pathName === "/pages/contact" ? "underline font-bold" : ""}>
+          <a
+            className={
+              pathName === "/pages/contact" ? "underline font-bold" : ""
+            }
+          >
             Contact
           </a>
         </li>
@@ -191,19 +250,22 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <div className="w-10 flex justify-center items-center h-10">
               <p className="text-white text-xl font-semibold "> MonoLens</p>
-          <Lottie animationData={camera} loop={true} />
-        </div>
-      </div>
-
-
-
-    
+              <Lottie animationData={camera} loop={true} />
+            </div>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-white menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link href="/pages/login">
+          
+           <Button
+            label="Login"
+            className=" my-btn font-semibold px-3 "
+            style={{ border: "none", boxShadow: "none" }}
+          />
+          </Link>
         </div>
       </div>
     </div>

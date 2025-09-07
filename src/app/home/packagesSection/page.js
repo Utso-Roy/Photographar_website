@@ -4,6 +4,7 @@ import Image from "next/image";
 import weddingImg from "../../assets/wedding.jpg";
 import birthdayImg from "../../assets/BirthdayPhotography.jpg";
 import travelImg from "../../assets/TravelPhotography.jpg";
+import Link from "next/link";
 
 const packages = [
   {
@@ -63,9 +64,12 @@ export default function PackageSection() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-yellow-500 text-base-100 btn font-semibold py-2 px-6 rounded-full ">
+                <Link href="/pages/booking">
+                
+                <button className=" my-btn text-base-100 font-semibold py-2 px-6 cursor-pointer rounded-full ">
                   Book Now
                 </button>
+                </Link>
               </div>
             </div>
           ))}
