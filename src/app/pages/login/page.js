@@ -12,7 +12,6 @@ export default function LoginDemo() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10">
           {/* Login Form */}
           <div className="flex-1 flex flex-col items-center justify-center gap-5">
-            
             {/* Headline */}
             <h2 className="text-3xl font-bold text-center mb-2">Sign In</h2>
 
