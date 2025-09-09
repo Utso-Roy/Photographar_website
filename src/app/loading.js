@@ -1,7 +1,10 @@
 import React from 'react'
+import { FadeLoader } from 'react-spinners'
 
-export default function loading() {
+export default function Loading() {
   return (
-    <div className='px-5 py-20'>loading.....</div>
+    <div className=" max-w-6xl mx-auto flex items-center justify-center h-screen">
+      <FadeLoader color="#cc5200" />
+    </div>
   )
 }
