@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaTwitter, FaYoutube, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {  FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 
 export default function Footer() {

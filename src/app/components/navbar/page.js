@@ -4,7 +4,7 @@ import React from "react";
 import camera from "../../assets/camera.json";
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
-import { Button } from "primereact/button";
+import { Avatar } from "primereact/avatar";
 export default function Navbar() {
   const pathName = usePathname();
 
@@ -257,16 +257,16 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-white menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
-          <Link href="/pages/login">
-          
-           <Button
-            label="Login"
-            className=" my-btn font-semibold px-3 "
-            style={{ border: "none", boxShadow: "none" }}
-          />
-          </Link>
-        </div>
+        <div className="navbar-end flex items-center gap-3">
+      <Link href="/pages/login">
+        <Avatar
+          icon="pi pi-user"
+          shape="circle"
+          size="large"
+          className="cursor-pointer !text-[#cc5200]"
+        />
+      </Link>
+    </div>
       </div>
     </div>
   );
