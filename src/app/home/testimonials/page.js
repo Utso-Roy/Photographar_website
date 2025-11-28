@@ -40,7 +40,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-24 px-5 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gray-800"></div>
       
@@ -63,7 +63,7 @@ export default function Testimonials() {
             Loved by <span className="text-white">Creatives</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Don't just take our word for it—hear from the people who've experienced our work firsthand.
+            Do not just take our word for it—hear from the people who have experienced our work firsthand.
           </p>
         </div>
 

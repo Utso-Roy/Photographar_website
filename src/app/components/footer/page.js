@@ -21,7 +21,8 @@ export default function Footer() {
               Mono<span className="text-orange-500">Lens</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Capturing life's precious moments with creativity and passion. Professional photography services for every occasion.
+                Capturing life is precious moments with creativity and passion. <br />
+                Professional photography services for every occasion.
             </p>
           </div>
 
