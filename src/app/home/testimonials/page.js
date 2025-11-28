@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaStar, FaChevronLeft, FaChevronRight, FaQuoteLeft } from 'react-icons/fa';
@@ -44,8 +45,8 @@ export default function Testimonials() {
       <div className="absolute inset-0 bg-gray-800"></div>
       
       {/* Animated Orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#cc5200]/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#cc5200]/20 rounded-full blur-3xl animate-pulse"></div>
 
     <Container>
 
@@ -71,12 +72,12 @@ export default function Testimonials() {
           <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-1 shadow-2xl">
             <div className="bg-slate-900/90 rounded-3xl p-8 md:p-12 relative">
               {/* Quote Icon */}
-              <FaQuoteLeft className="absolute top-6 left-6 text-purple-500/20 text-5xl" />
+              <FaQuoteLeft className="absolute top-6 left-6 text-[#cc5200]/20 text-5xl" />
               
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Image Section */}
                 <div className="relative">
-                  <div className="absolute inset-0 bg-[#ff6600] rounded-2xl blur-xl opacity-50"></div>
+                  <div className="absolute inset-0 bg-[#cc5200] rounded-2xl blur-xl opacity-50"></div>
                   <Image
                     src={testimonialsData[currentIndex].img}
                     alt={testimonialsData[currentIndex].name}
@@ -91,7 +92,7 @@ export default function Testimonials() {
                   {/* Stars */}
                   <div className="flex justify-center md:justify-start gap-1 mb-4">
                     {[...Array(testimonialsData[currentIndex].rating)].map((_, i) => (
-                      <FaStar key={i} className="text-yellow-400 text-lg" />
+                      <FaStar key={i} className="text-[#cc5200] text-lg" />
                     ))}
                   </div>
 
@@ -105,7 +106,7 @@ export default function Testimonials() {
                     <h4 className="text-white font-bold text-2xl mb-1">
                       {testimonialsData[currentIndex].name}
                     </h4>
-                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 font-medium">
+                    <p className="text-[#cc5200] font-medium">
                       {testimonialsData[currentIndex].designation}
                     </p>
                   </div>
@@ -140,7 +141,7 @@ export default function Testimonials() {
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'w-8 bg-gradient-to-r from-purple-500 to-blue-500'
+                    ? 'w-8 bg-[#cc5200]'
                     : 'w-2 bg-slate-700 hover:bg-slate-600'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
@@ -152,19 +153,19 @@ export default function Testimonials() {
         {/* Bottom Stats */}
         <div className="grid grid-cols-3 gap-6 mt-24 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-[#cc5200] mb-2">
               500+
             </div>
             <div className="text-gray-400 text-sm">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-[#cc5200] mb-2">
               5.0
             </div>
             <div className="text-gray-400 text-sm">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-[#cc5200] mb-2">
               1000+
             </div>
             <div className="text-gray-400 text-sm">Projects Done</div>
