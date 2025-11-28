@@ -6,6 +6,7 @@ import "primeflex/primeflex.css";
 import { Montserrat } from "next/font/google";
 import Navbar from "./components/navbar/page";
 import Footer from "./components/footer/page";
+import SmoothScroll from "./SmoothScroll/page";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -21,11 +22,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <section className="bg-[#040a0a]  text-white" >
+        <SmoothScroll>
+          <section className="bg-[#040a0a]  text-white" >
           <Navbar></Navbar>
           <main>{children}</main>
           <Footer></Footer>
         </section>
+        </SmoothScroll>
       </body>
     </html>
   );

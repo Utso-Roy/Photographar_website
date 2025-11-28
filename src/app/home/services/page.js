@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import  Container from '../../Container/page';
 
 import weddingImg from "../../assets/wedding.jpg";
 import birthdayImg from "../../assets/BirthdayPhotography.jpg";
@@ -31,7 +32,9 @@ export default function Services() {
 
   return (
     <section className=" py-10">
-      <div className="w-full ">
+      <Container>
+        
+         <div className="w-full ">
         {/* Heading */}
         <div className="text-center mb-12" data-aos="fade-down">
           <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>
@@ -82,6 +85,7 @@ export default function Services() {
           ))}
         </Swiper>
       </div>
+     </Container>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaCameraRetro, FaRegSmileBeam, FaMoneyCheckAlt } from "react-icons/fa";
+import  Container from '../../Container/page';
 
 export default function WhyChoseMySection() {
   const reasons = [
@@ -22,7 +23,10 @@ export default function WhyChoseMySection() {
   ];
 
   return (
-    <section className=" text-white py-12 overflow-hidden">
+    <Container>
+      
+
+        <section className=" text-white py-12 overflow-hidden">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Me</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
@@ -64,5 +68,6 @@ export default function WhyChoseMySection() {
         }
       `}</style>
     </section>
+  </Container>
   );
 }

@@ -5,6 +5,7 @@ import weddingImg from "../../assets/wedding.jpg";
 import birthdayImg from "../../assets/BirthdayPhotography.jpg";
 import travelImg from "../../assets/TravelPhotography.jpg";
 import Link from "next/link";
+import  Container from '../../Container/page';
 
 const packages = [
   {
@@ -30,7 +31,9 @@ const packages = [
 export default function PackageSection() {
   return (
     <section className="py-12 bg-gray-900">
-      <div>
+      <Container>
+      
+        <div className=" w-full  ">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Our Packages</h2>
@@ -40,11 +43,11 @@ export default function PackageSection() {
         </div>
 
         {/* Package Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-3 lg:gap-4">
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className="background rounded-2xl  overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-500"
+              className="background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-500"
             >
               <div className="relative h-56 w-full">
                 <Image
@@ -54,27 +57,33 @@ export default function PackageSection() {
                   priority
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{pkg.title}</h3>
-                <p className=" text-lg font-bold mb-4">{pkg.price}</p>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {pkg.title}
+                </h3>
+                <p className="text-lg font-bold mb-4">{pkg.price}</p>
                 <ul className="text-gray-300 mb-6">
                   {pkg.features.map((feature, i) => (
-                    <li key={i} className="mb-1 before:content-['✔'] before:text-yellow-500 before:mr-2">
+                    <li
+                      key={i}
+                      className="mb-1 before:content-['✔'] before:text-yellow-500 before:mr-2"
+                    >
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <Link href="/pages/booking">
-                
-                <button className=" my-btn text-base-100 font-semibold py-2 px-6 cursor-pointer rounded-full ">
-                  Book Now
-                </button>
+                  <button className="my-btn text-base-100 font-semibold py-2 px-6 cursor-pointer rounded-full">
+                    Book Now
+                  </button>
                 </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
+      
+      </Container>        
     </section>
   );
 }

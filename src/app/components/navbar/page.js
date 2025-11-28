@@ -5,6 +5,8 @@ import camera from "../../assets/camera.json";
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
 import { Avatar } from "primereact/avatar";
+import  Container from '../../Container/page';
+
 export default function Navbar() {
   const pathName = usePathname();
 
@@ -215,9 +217,14 @@ export default function Navbar() {
   );
 
   return (
-    <div>
-      <div className="navbar z-50   bg-white/5 backdrop-blur-2xl  fixed top-0  shadow-sm">
-        <div className="navbar-start">
+  
+    
+        
+          <div className="navbar z-50   bg-white/5 backdrop-blur-2xl  fixed top-0  shadow-sm">
+      
+        
+
+              <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -267,7 +274,13 @@ export default function Navbar() {
         />
       </Link>
     </div>
+      
+      
+
+
+  
       </div>
-    </div>
+    
+    
   );
 }

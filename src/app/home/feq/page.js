@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-
+import  Container from '../../Container/page';
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -34,7 +34,7 @@ export default function Faq() {
 
   return (
     <section className="bg-black text-base-100 py-12 ">
-      <div >
+      <Container >
         <h2 className="text-3xl font-bold text-center mb-12">
           Frequently Asked Questions
         </h2>
@@ -59,7 +59,7 @@ export default function Faq() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

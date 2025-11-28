@@ -1,13 +1,17 @@
 "use client";
 import CircularGallery from "../../../CircularGallery/CircularGallery.jsx";
 import React from "react";
+import  Container from '../../Container/page';
 
 export default function Travel() {
 
   return (
     <section className="py-20 bg-gray-50">
       {/* Header */}
-      <div className="text-center mb-12" data-aos="fade-up">
+      <Container>
+        
+
+         <div className="text-center mb-12" data-aos="fade-up">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           Travel Photography
         </h1>
@@ -31,6 +35,7 @@ export default function Travel() {
           quality and creativity.
         </p>
       </div>
+     </Container>
     </section>
   );
 }
