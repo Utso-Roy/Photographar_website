@@ -14,6 +14,7 @@ import {
   FiCheck,
 } from "react-icons/fi";
 import CountUp from "react-countup";
+import  Container from '../../Container/page';
 
 export default function Journey() {
   const stats = [
@@ -89,9 +90,9 @@ export default function Journey() {
   ];
 
   return (
-    <section className="px-5 py-18 min-h-screen  text-neutral-100">
+    <section className=" py-18 min-h-screen  text-neutral-100">
       {/* Header */}
-      <div>
+      <Container>
         <header className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full background">
             <FiCamera />
@@ -201,7 +202,7 @@ export default function Journey() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

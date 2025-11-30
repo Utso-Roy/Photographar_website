@@ -220,7 +220,7 @@ export default function Navbar() {
   
     
         
-          <div className="navbar z-50   bg-white/5 backdrop-blur-2xl  fixed top-0  shadow-sm">
+          <div className="navbar w-full fixed top-0 left-0 z-50 bg-white/5 backdrop-blur-2xl shadow-sm">
       
         
 

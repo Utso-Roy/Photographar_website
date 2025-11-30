@@ -4,6 +4,7 @@ import { Card } from 'primereact/card';
 import { Tag } from 'primereact/tag';
 import { FiAward, FiUsers, FiCamera, FiStar } from 'react-icons/fi';
 import CountUp from 'react-countup';
+import  Container from '../../Container/page';
 
 export default function Achievement() {
   const achievements = [
@@ -15,14 +16,17 @@ export default function Achievement() {
 
   return (
     <section className="px-5 py-18 text-neutral-100 min-h-screen">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <Container>
+
+
+        <div className=" text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-extrabold mb-4">Achievements & Milestones</h2>
         <p className="text-neutral-400 max-w-2xl mx-auto">
           Celebrating moments of excellence and milestones in photography and creative projects.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 rounded-2xl">
         {achievements.map((ach, idx) => (
           <Card key={idx} className="background rounded-3xl p-6 hover:bg-neutral-900 transition-all">
             <div className="flex items-center justify-center mb-2 text-neutral-100">
@@ -36,6 +40,7 @@ export default function Achievement() {
           </Card>
         ))}
       </div>
+      </Container>
     </section>
   );
 }

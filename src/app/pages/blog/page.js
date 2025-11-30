@@ -7,6 +7,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import Author from '../../assets/author.jpg'
+import  Container from '../../Container/page';
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -61,7 +63,7 @@ export default function Blog() {
     {
       id: 6,
       title: "Macro Photography Magic",
-      desc: "Discover the beauty in tiny details with macro shots.",
+      desc: "Discover the beauty in tiny details with macro shots and capture photo",
       author: "Utso Roy",
       date: "Aug 10, 2025",
       image:
@@ -88,9 +90,13 @@ export default function Blog() {
   ];
 
   return (
-    <div className="px-5 py-20 min-h-screen ">
+    <div className=" py-20 min-h-screen ">
       {/*  Hero Section */}
-      <div className="text-center mb-16">
+    <Container>
+
+
+
+        <div className="text-center mb-16">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -129,8 +135,7 @@ export default function Blog() {
         spaceBetween={20}
         slidesPerView={1}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation
+  
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
@@ -202,6 +207,7 @@ export default function Blog() {
           />
         </div>
       </motion.div>
+    </Container>
     </div>
   );
 }

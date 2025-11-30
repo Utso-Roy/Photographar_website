@@ -112,7 +112,6 @@ export default function Events() {
           </p>
         </div>
 
-        {/* Swiper Slider with Coverflow Effect */}
         <Swiper
           modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
           effect="coverflow"
@@ -130,7 +129,6 @@ export default function Events() {
           }}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },

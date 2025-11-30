@@ -94,7 +94,6 @@ export default function ProductPhotography() {
           spaceBetween={40}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
