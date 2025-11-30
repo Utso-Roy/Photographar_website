@@ -5,7 +5,6 @@ import camera from "../../assets/camera.json";
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
 import { Avatar } from "primereact/avatar";
-import  Container from '../../Container/page';
 
 export default function Navbar() {
   const pathName = usePathname();
@@ -217,14 +216,9 @@ export default function Navbar() {
   );
 
   return (
-  
-    
-        
-          <div className="navbar w-full fixed top-0 left-0 z-50 bg-white/5 backdrop-blur-2xl shadow-sm">
-      
-        
-
-              <div className="navbar-start">
+    <nav className="fixed top-0 left-0 right-0 z-[9999] w-full">
+      <div className="navbar w-full bg-white/5 backdrop-blur-2xl shadow-sm border-b border-white/10">
+        <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -238,25 +232,24 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
           <div className="flex items-center gap-4">
             <div className="w-10 flex justify-center items-center h-10">
-              <p className="text-white text-xl font-semibold "> MonoLens</p>
+              <p className="text-white text-xl font-semibold">MonoLens</p>
               <Lottie animationData={camera} loop={true} />
             </div>
           </div>
@@ -265,22 +258,16 @@ export default function Navbar() {
           <ul className="menu text-white menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end flex items-center gap-3">
-      <Link href="/pages/login">
-        <Avatar
-          icon="pi pi-user"
-          shape="circle"
-          size="large"
-          className="cursor-pointer !text-[#cc5200]"
-        />
-      </Link>
-    </div>
-      
-      
-
-
-  
+          <Link href="/pages/login">
+            <Avatar
+              icon="pi pi-user"
+              shape="circle"
+              size="large"
+              className="cursor-pointer !text-[#cc5200]"
+            />
+          </Link>
+        </div>
       </div>
-    
-    
+    </nav>
   );
 }

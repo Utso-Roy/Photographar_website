@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
+                  <Navbar></Navbar>
         <SmoothScroll>
           <section className="bg-[#040a0a]  text-white" >
-          <Navbar></Navbar>
           <main>{children}</main>
           <Footer></Footer>
         </section>

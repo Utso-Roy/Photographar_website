@@ -3,12 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "primereact/button"; 
 import Link from "next/link";
+import  Container from '../../Container/page';
 
 
 export default function CallToActionSection() {
   return (
-    <section className=" text-white py-12 px-6">
-      <div className=" text-center">
+    <section className=" text-white py-12 ">
+      <Container>
+        
+          <div className=" text-center">
         {/* Heading */}
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-6"
@@ -54,6 +57,7 @@ export default function CallToActionSection() {
           </Link>
         </motion.div>
       </div>
+    </Container>
     </section>
   );
 }

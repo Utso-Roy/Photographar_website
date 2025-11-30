@@ -38,31 +38,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5">
+      <section >
         <Services></Services>
       </section>
-      <section className="px-5">
+      <section >
         <Portfolio></Portfolio>
       </section>
-      <section className="px-5">
+      <section >
         <Travel></Travel>
       </section>
-      <section className="px-5">
+      <section >
         <Testimonials></Testimonials>
       </section>
-      <section className="px-5">
+      <section >
         <PackageSection></PackageSection>
       </section>
       
-      <section className="px-5">
+      <section >
         <Faq></Faq>
       </section>
       
-      <section className="px-5">
+      <section>
         <WhyChoseMySection></WhyChoseMySection>
       </section>
       
-      <section className="px-5">
+      <section >
         <CallToActionSection></CallToActionSection>
       </section>
     
