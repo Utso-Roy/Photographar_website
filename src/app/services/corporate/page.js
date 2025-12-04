@@ -102,7 +102,7 @@ const corporateServices = [
           }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation
+          
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

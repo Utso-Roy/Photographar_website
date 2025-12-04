@@ -5,6 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { FloatLabel } from "primereact/floatlabel";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Button } from "primereact/button";
+import  Container from '../../Container/page';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -12,8 +13,10 @@ export default function Contact() {
   const [message, setMessage] = useState('');
 
   return (
-    <section className='px-6  py-18 '>
-      <div  className='flex background rounded-2xl justify-center items-center gap-12'>
+    <section className='  py-30 '>
+      <Container>
+
+<div  className='flex background rounded-2xl justify-center items-center gap-12'>
         
         {/* Left Side - Info */}
         <div data-aos="fade-right" className="space-y-6">
@@ -64,6 +67,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
+      </Container>
     </section>
   )
 }

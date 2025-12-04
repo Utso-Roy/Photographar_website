@@ -5,6 +5,7 @@ import camera from "../../assets/camera.json";
 import Lottie from "lottie-react";
 import { usePathname } from "next/navigation";
 import { Avatar } from "primereact/avatar";
+import  Container from '../../Container/page';
 
 export default function Navbar() {
   const pathName = usePathname();
@@ -217,7 +218,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[9999] w-full">
-      <div className="navbar w-full bg-white/5 backdrop-blur-2xl shadow-sm border-b border-white/10">
+      <Container>
+        
+         <div className="navbar w-full rounded-b-2xl  bg-white/5 backdrop-blur-2xl shadow-sm border-b border-white/10">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -268,6 +271,7 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+     </Container>
     </nav>
   );
 }

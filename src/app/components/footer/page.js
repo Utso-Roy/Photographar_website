@@ -8,7 +8,7 @@ import  Container from '../../Container/page';
 
 export default function Footer() {
   return (
-    <footer className="background text-gray-300 px-6 sm:px-20 py-16">
+    <footer className="background text-gray-300 py-16">
       <Container>
         
 

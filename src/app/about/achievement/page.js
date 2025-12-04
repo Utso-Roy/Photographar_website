@@ -26,7 +26,7 @@ export default function Achievement() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 rounded-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-4  mx-auto justify-items-center gap-6 rounded-2xl">
         {achievements.map((ach, idx) => (
           <Card key={idx} className="background rounded-3xl p-6 hover:bg-neutral-900 transition-all">
             <div className="flex items-center justify-center mb-2 text-neutral-100">

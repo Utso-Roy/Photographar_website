@@ -6,7 +6,8 @@ import { Button } from "primereact/button";
 
 export default function Booking() {
   return (
-    <div className="px-5 py-18 min-h-screen flex justify-center items-start ">
+    <div className="px-
+     py-30 min-h-screen flex justify-center items-start ">
       <div className="w-full max-w-3xl background p-8 rounded-3xl shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-3 text-white">
           Book Your Session
