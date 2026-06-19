@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-                  <Navbar></Navbar>
+        <Navbar></Navbar>
         <SmoothScroll>
-          <section className="bg-[#040a0a]  text-white" >
-          <main>{children}</main>
-          <Footer></Footer>
-        </section>
+          <section className="bg-[#040a0a]  text-white">
+            <main>{children}</main>
+            <Footer></Footer>
+          </section>
         </SmoothScroll>
       </body>
     </html>
