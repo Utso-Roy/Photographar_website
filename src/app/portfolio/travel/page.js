@@ -242,19 +242,19 @@ export default function TravelPortfolio() {
                 <Button
                   className="p-button-rounded w-full font-medium flex items-center justify-center gap-2"
                   style={{
-                    backgroundColor: 'rgba(99, 102, 241, 0.2)',
+                    backgroundColor: '#cc5200',
                     border: 'none',
-                    color: '#818cf8',
+                    color: 'white',
                     padding: '0.75rem',
                     transition: 'all 0.3s',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#6366f1';
+                    e.currentTarget.style.backgroundColor = '#cc5200';
                     e.currentTarget.style.color = 'white';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(99, 102, 241, 0.2)';
-                    e.currentTarget.style.color = '#818cf8';
+                    e.currentTarget.style.backgroundColor = '#cc5200';
+                    e.currentTarget.style.color = 'white';
                   }}
                 >
                   <span>Explore Now</span>
