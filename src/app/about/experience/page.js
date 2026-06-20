@@ -37,7 +37,8 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-neutral-100">
+    <section className="py-12 md:py-30
+     bg-black text-neutral-100">
       <Container>
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 px-4">
@@ -54,7 +55,7 @@ export default function Experience() {
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className="group relative flex flex-col items-center text-center bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl md:rounded-3xl p-6 md:p-8 hover:scale-105 hover:shadow-2xl hover:shadow-amber-400/20 transform transition-all duration-300 border border-gray-700 hover:border-amber-400/50"
+              className="group relative flex flex-col items-center text-center bg-[#262626] rounded-2xl md:rounded-3xl p-6 md:p-8 hover:scale-105 hover:shadow-2xl hover:shadow-amber-400/20 transform transition-all duration-300  hover:border-amber-400/50"
             >
               {/* Glow Effect on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400/0 to-amber-400/0 group-hover:from-amber-400/10 group-hover:to-transparent rounded-2xl md:rounded-3xl transition-all duration-300"></div>
