@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
             MonoLens Photography
           </h1>
-          <p className="text-white text-lg lg:text-2xl max-w-2xl drop-shadow-md">
+          <p className="text-white text-lg lg:text-2xl max-w-xl drop-shadow-md">
             Capturing your precious moments with professional quality.
           </p>
         </div>

@@ -37,7 +37,7 @@ export default function PackageSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Our Packages
           </h2>
-          <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-300  text-base md:text-lg mx-w-2xl  mx-auto">
             Choose the perfect photography package for your special moments.
           </p>
         </div>
